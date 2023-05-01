@@ -1,3 +1,3 @@
-p = document.getElementById("p")
+pp = document.getElementById("p")
 
-p.innerhtml = `<p> Ivan is nice</p>`
+pp.innerhtml = `<p> Ivan is nice</p>`
