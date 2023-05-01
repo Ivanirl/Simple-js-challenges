@@ -1,3 +1,4 @@
 pp = document.getElementById("p")
+console.log(pp)
 
-pp.innerhtml = `<p> Ivan is nice</p>`
+pp.innerHtml = `<p> Ivan is nice</p>`
