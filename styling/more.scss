@@ -73,9 +73,8 @@ body{
     }
 }
 
-.carousel.dragging.cards{
+.carousel.dragging .cards{
     cursor: grab;
-    user-select: none;
 }
 
 i{
