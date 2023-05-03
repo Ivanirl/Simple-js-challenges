@@ -2,11 +2,12 @@ const caro = document.querySelector(".carousel")
 
 let isdragging = false
 
-function brag(){
+const brag = () => {
     isdragging = true
+    caro.classList.add("dragging")
 }
 
-function drag(e){
+const drag = (e) => {
     if(!isdragging) return //this means if isdragging is false return from here
     caro.scrollLeft = e.pageX
 }

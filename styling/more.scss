@@ -73,6 +73,11 @@ body{
     }
 }
 
+.carousel.dragging.cards{
+    cursor: grab;
+    user-select: none;
+}
+
 i{
     font-size: 1.25em;
     cursor: pointer;
