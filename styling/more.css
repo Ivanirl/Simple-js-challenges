@@ -26,9 +26,13 @@ body {
   grid-auto-columns: calc(33.3333333333% - 12px);
   gap: 16px;
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 .wrapper .carousel .cards {
+  scroll-snap-align: start;
   list-style: none;
   background: #fff;
   border-radius: 8px;
@@ -65,6 +69,26 @@ body {
 .wrapper .carousel .cards span {
   color: #6a6d78;
   font-size: 1.31em;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.dragging {
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.carousel.dragging .cards {
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.carousel.no-trans {
+  scroll-behavior: auto;
 }
 
 i {

@@ -31,9 +31,13 @@ body{
         grid-auto-columns: calc((100% / 3) - 12px);
         gap: 16px;
         width: 100%;
-        overflow: hidden;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
 
         .cards{
+            scroll-snap-align: start;
             list-style: none;
             background: #fff;
             border-radius: 8px;
@@ -73,9 +77,22 @@ body{
     }
 }
 
-//////
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
 .carousel.dragging .cards{
     cursor: grab;
+    user-select: none;
+}
+
+.carousel.no-trans {
+    scroll-behavior: auto;
 }
 
 i{
