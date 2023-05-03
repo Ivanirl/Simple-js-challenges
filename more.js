@@ -12,6 +12,11 @@ const drag = (e) => {
     caro.scrollLeft = e.pageX
 }
 
+const dragStop = () => {
+    isdragging = false
+    caro.classList.remove("dragging")
+}
 
 caro.addEventListener("mousedown", brag)
 caro.addEventListener("mousemove", drag)
+caro.addEventListener("mouseup", dragStop)
