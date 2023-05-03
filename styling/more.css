@@ -18,6 +18,7 @@ body {
 .wrapper {
   max-width: 1100px;
   width: 100%;
+  position: relative;
 }
 .wrapper .carousel {
   display: grid;
@@ -67,5 +68,37 @@ body {
 }
 
 i {
-  width: 29px;
+  font-size: 1.25em;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+i:first-child {
+  left: -22px;
+}
+i:last-child {
+  right: -22px;
+}
+i::before {
+  display: flex;
+  flex-direction: column;
+  line-height: 260%;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc(50% - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }/*# sourceMappingURL=more.css.map */
