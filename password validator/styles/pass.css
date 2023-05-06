@@ -19,4 +19,14 @@ body {
   width: 450px;
   padding: 28px;
   border-radius: 7px;
+}
+.wrapper .passfield {
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .passfield input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
 }/*# sourceMappingURL=pass.css.map */
