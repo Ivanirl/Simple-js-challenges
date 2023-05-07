@@ -39,4 +39,28 @@ body {
   right: 18px;
   top: 50%;
   transform: translateY(-50%);
+}
+.wrapper .content {
+  margin: 20px 0 10px;
+}
+.wrapper .content p {
+  font-size: 1.3em;
+}
+.wrapper .content .req-list {
+  margin-top: 20px;
+}
+.wrapper .content .req-list li {
+  list-style: none;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.wrapper .content .req-list li span {
+  margin-left: 12px;
+}
+.wrapper .content .req-list li i {
+  font-size: 0.6em;
+  color: #aaa;
+  width: 20px;
 }/*# sourceMappingURL=pass.css.map */
