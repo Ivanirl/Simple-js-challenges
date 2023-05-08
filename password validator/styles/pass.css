@@ -19,6 +19,7 @@ body {
   width: 450px;
   padding: 28px;
   border-radius: 7px;
+  align-items: center;
 }
 .wrapper .passfield {
   height: 65px;
@@ -35,6 +36,8 @@ body {
   padding: 0 17px;
 }
 .wrapper .passfield i {
+  color: #999;
+  cursor: pointer;
   position: absolute;
   right: 18px;
   top: 50%;
@@ -63,4 +66,28 @@ body {
   font-size: 0.6em;
   color: #aaa;
   width: 20px;
+}
+.wrapper .content .req-list li.vlad i {
+  font-size: 1.2em;
+  color: #4285f4;
+}
+.wrapper .content .req-list li.vlad span {
+  color: #999;
+}
+.wrapper .btnhold {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5em;
+}
+.wrapper .btnhold button {
+  color: white;
+  font-size: 16.7px;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
+  border-radius: 7px;
+  border: solid 0.2px;
+  background-color: #4285F4;
+}
+.wrapper .btnhold .darko {
+  background-color: #1a3d75;
 }/*# sourceMappingURL=pass.css.map */

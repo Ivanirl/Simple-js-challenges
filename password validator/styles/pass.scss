@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sen:wght@400;700;800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ body{
     width: 450px;
     padding: 28px;
     border-radius: 7px;
+    align-items: center;
 
     .passfield{
         height: 65px;
@@ -37,6 +39,8 @@ body{
         }
         
         i{
+            color: #999;
+            cursor: pointer;
             position: absolute;
             right: 18px;
             top: 50%;
@@ -71,6 +75,38 @@ body{
                     width: 20px;
                 }
             }
+
+            li.vlad {
+                i{
+                    font-size: 1.2em;
+                    color: #4285f4;
+                }
+
+                span{
+                    color: #999;
+                }
+            }
+        }
+    }
+
+
+    .btnhold{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5em;
+
+        button{
+            color: white;
+            font-size: 16.7px;
+            font-weight: bold;
+            padding: 0.5em 1.5em;
+            border-radius: 7px;
+            border: solid 0.2px;
+            background-color: #4285F4;
+        }
+
+        .darko{
+            background-color: #1a3d75;
         }
     }
 
