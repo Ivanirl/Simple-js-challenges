@@ -24,17 +24,25 @@ body{
         list-style: none;
         display: flex;
         align-items: center;
+        border-radius: 5px;
         justify-content: space-between;
+        border: 1px solid #ccc;
+        margin-bottom: 11px;
+        padding: 10px 13px;
 
         .details{
             display: flex;
+            align-items: center;
 
             img{
                 width: 43px;
                 height: 43px;
                 object-fit: cover;
                 border-radius: 50%;
+                margin-right: 12px;
             }
+
+            
         }
     }
 }
