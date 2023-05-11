@@ -17,7 +17,7 @@ body{
 .draggable-list{
     background: #fff;
     width: 445px;
-    padding: 30px 35px 20px;
+    padding: 30px 25px 20px;
     border-radius: 6px;
 
     .item{
@@ -42,7 +42,14 @@ body{
                 margin-right: 12px;
             }
 
-            
+            span{
+                font-size: 1.13em;
+            }
+
+            i{
+                font-size: 1.13em;
+                color: #474747;
+            }
         }
     }
 }
