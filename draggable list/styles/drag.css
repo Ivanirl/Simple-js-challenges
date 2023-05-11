@@ -24,10 +24,15 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+  border-radius: 5px;
   justify-content: space-between;
+  border: 1px solid #ccc;
+  margin-bottom: 11px;
+  padding: 10px 13px;
 }
 .draggable-list .item .details {
   display: flex;
+  align-items: center;
 }
 .draggable-list .item .details img {
   width: 43px;
@@ -35,4 +40,5 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  margin-right: 12px;
 }/*# sourceMappingURL=drag.css.map */
