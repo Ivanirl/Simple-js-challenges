@@ -1,14 +1,12 @@
-const op = document.querySelector(".draggable-list .item")
+const op = document.querySelector(".draggable-list")
 
-const hey = op.querySelectorAll(".item")
+const item = document.querySelectorAll(".item")
 
-hey.addEventListener("click", () => {
-    op.innerHTML += `
-    <div>
-    <h1>
-    I HATE YOU
-    </h1>
-    </div>
-    `
-    console.log("big boy pants")
+item.forEach(item=>{
+    item.addEventListener("click", ()=>{
+        op.innerHTML += `<button>Howdy</button>`
+    })
 })
+
+
+    console.log("big boy pants")
