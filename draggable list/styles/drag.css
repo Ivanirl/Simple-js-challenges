@@ -17,7 +17,7 @@ body {
 .draggable-list {
   background: #fff;
   width: 445px;
-  padding: 30px 35px 20px;
+  padding: 30px 25px 20px;
   border-radius: 6px;
 }
 .draggable-list .item {
@@ -41,4 +41,11 @@ body {
      object-fit: cover;
   border-radius: 50%;
   margin-right: 12px;
+}
+.draggable-list .item .details span {
+  font-size: 1.13em;
+}
+.draggable-list .item .details i {
+  font-size: 1.13em;
+  color: #474747;
 }/*# sourceMappingURL=drag.css.map */
