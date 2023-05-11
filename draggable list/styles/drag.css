@@ -12,6 +12,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #595db8;
+  text-align: center;
 }
 
 .draggable-list {
@@ -48,4 +49,20 @@ body {
 .draggable-list .item .details i {
   font-size: 1.13em;
   color: #474747;
+}
+
+button {
+  font-size: 1.13em;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  border-radius: 10%;
+  border: none;
+  background-color: #595db8;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 2em;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: #2e3166;
 }/*# sourceMappingURL=drag.css.map */
