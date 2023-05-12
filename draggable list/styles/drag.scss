@@ -71,3 +71,7 @@ button{
         background-color: #2e3166;
     }
 }
+
+.item.dragging :where(.details, i) {
+    opacity: 0;
+}
