@@ -11,6 +11,7 @@ item.forEach(item=>{
     item.addEventListener("dragend", ()=> {item.classList.remove("dragging")})
 })
 
+
 //to learn
 
 const initSortableList =  (e) => {
