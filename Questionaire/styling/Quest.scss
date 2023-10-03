@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  width: fit-content;
+}
+
+body {
+  color: white;
+  background: green;
+  width: 100%;
+  padding-top: 1em;
+
+  .root {
+    padding: 0 1em;
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 3em;
+      .space {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .bodice {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transition: all linear 2s;
+    button {
+      border: solid 1px white;
+      padding: 0.5em 1.5em;
+      border-radius: 1px;
+      font-size: 0.9em;
+      transition: letter-spacing 0.25s linear, color 0.1s linear;
+      &:hover {
+        letter-spacing: 3px;
+      }
+      &:active {
+        background: white;
+        color: black;
+      }
+    }
+    section {
+        display: block;
+      .cont {
+        h1 {
+          font-size: 1.9em;
+          cursor: default;
+        }
+        .optionholder {
+          margin-top: 2em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1em;
+        }
+      }
+    } 
+  }
+}
+
+.noshow {
+  display: none;
+}
+
+.talis {
+  width: 100%;
+  background: white;
+  height: 3px;
+  border-radius: 1px;
+
+  .jace {
+    background: rgb(0, 90, 0);
+    height: 100%;
+    width: 2%;
+    border-radius: 1px;
+  }
+}
+
+
+.page0 {
+    #welcomey {
+      display: block;
+    }
+    #first {
+      display: none;
+    }
+    #second {
+      display: none;
+    }
+    #third {
+      display: none;
+    }
+    #fourth {
+      display: none;
+    }
+  }
+  
+  .page1 {
+      #welcomey {
+        display: none;
+      }
+      #first {
+        display: block;
+      }
+      #second {
+        display: none;
+      }
+      #third {
+        display: none;
+      }
+      #fourth {
+        display: none;
+      }
+  }
+  
+  .page2 {
+      #welcomey {
+        display: none;
+      }
+      #first {
+        display: none;
+      }
+      #second {
+        display: block;
+      }
+      #third {
+        display: none;
+      }
+      #fourth {
+        display: none;
+      }
+  }
+  
+  .page3 {
+      #welcomey {
+        display: none;
+      }
+      #first {
+        display: none;
+      }
+      #second {
+        display: none;
+      }
+      #third {
+        display: block;
+      }
+      #fourth {
+        display: none;
+      }
+  }
+  
+  .page4 {
+      #welcomey {
+        display: none;
+      }
+      #first {
+        display: none;
+      }
+      #second {
+        display: none;
+      }
+      #third {
+        display: none;
+      }
+      #fourth {
+        display: block;
+      }
+  }
