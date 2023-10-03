@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body {
+  color: white;
+  background: green;
+  width: 100%;
+  padding-top: 1em;
+}
+body .root {
+  padding: 0 1em;
+}
+body .root .header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 3em;
+}
+body .root .header .space {
+  display: flex;
+  justify-content: space-between;
+}
+body .bodice {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all linear 2s;
+}
+body .bodice button {
+  border: solid 1px white;
+  padding: 0.5em 1.5em;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: letter-spacing 0.25s linear, color 0.1s linear;
+}
+body .bodice button:hover {
+  letter-spacing: 3px;
+}
+body .bodice button:active {
+  background: white;
+  color: black;
+}
+body .bodice section {
+  display: block;
+}
+body .bodice section .cont h1 {
+  font-size: 1.9em;
+  cursor: default;
+}
+body .bodice section .cont .optionholder {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.noshow {
+  display: none;
+}
+
+.talis {
+  width: 100%;
+  background: white;
+  height: 3px;
+  border-radius: 1px;
+}
+.talis .jace {
+  background: rgb(0, 90, 0);
+  height: 100%;
+  width: 2%;
+  border-radius: 1px;
+}
+
+.page0 #welcomey {
+  display: block;
+}
+.page0 #first {
+  display: none;
+}
+.page0 #second {
+  display: none;
+}
+.page0 #third {
+  display: none;
+}
+.page0 #fourth {
+  display: none;
+}
+
+.page1 #welcomey {
+  display: none;
+}
+.page1 #first {
+  display: block;
+}
+.page1 #second {
+  display: none;
+}
+.page1 #third {
+  display: none;
+}
+.page1 #fourth {
+  display: none;
+}
+
+.page2 #welcomey {
+  display: none;
+}
+.page2 #first {
+  display: none;
+}
+.page2 #second {
+  display: block;
+}
+.page2 #third {
+  display: none;
+}
+.page2 #fourth {
+  display: none;
+}
+
+.page3 #welcomey {
+  display: none;
+}
+.page3 #first {
+  display: none;
+}
+.page3 #second {
+  display: none;
+}
+.page3 #third {
+  display: block;
+}
+.page3 #fourth {
+  display: none;
+}
+
+.page4 #welcomey {
+  display: none;
+}
+.page4 #first {
+  display: none;
+}
+.page4 #second {
+  display: none;
+}
+.page4 #third {
+  display: none;
+}
+.page4 #fourth {
+  display: block;
+}/*# sourceMappingURL=Quest.css.map */
