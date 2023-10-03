@@ -1,25 +1,44 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Questionaire</title>
-    <link>
-</head>
-<body>
+    <link rel="stylesheet" href="./styling/Quest.css" />
+  </head>
+  <body>
     <div class="root">
-        <section class="first">
-            popeye the first
+      <div class="header">
+        <div class="space">
+          <button>Back</button>
+          <button>Next</button>
+        </div>
+        <div class="talis">
+          <div class="jace"></div>
+        </div>
+      </div>
+      <div class="bodice page0">
+        <section id="welcomey">
+            <div class="cont">
+              <h1>Welcome you bitch</h1>
+              <div class="optionholder">
+                <button onclick="next()">Do you like this shit?</button>
+              </div>
+            </div>
+          </section>
+        <section id="first">
+          <div class="cont">
+            <h1>Question one</h1>
+            <div class="optionholder">
+              <button onclick="next()">Do you like this shit?</button>
+              <button>Do you prefer this instead?</button>
+            </div>
+          </div>
         </section>
-        <section class="second">
-            popeye the second
-        </section>
-        <section class="third">
-            popeye the third
-        </section>
-        <section class="fourth">
-            popeye the fourth
-        </section>
+        <section class="noshow" id="second">popeye the second</section>
+        <section class="noshow" id="third">popeye the third</section>
+        <section class="noshow" id="fourth">popeye the fourth</section>
+      </div>
     </div>
     <script src="./Quest.js"></script>
-</body>
+  </body>
 </html>
