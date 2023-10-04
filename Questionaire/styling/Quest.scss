@@ -5,11 +5,20 @@
 }
 
 button {
-  cursor: pointer;
-  background: none;
-  border: none;
   color: white;
-  width: fit-content;
+  border: solid 1px white;
+  padding: 0.5em 1.5em;
+  background: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: letter-spacing 0.25s linear, color 0.1s ease-in-out;
+  &:hover {
+    letter-spacing: 3px;
+  }
+  &:active {
+    background: white;
+    color: black;
+  }
 }
 
 body {
@@ -29,43 +38,35 @@ body {
         display: flex;
         justify-content: space-between;
       }
+      button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        width: fit-content;
+      }
     }
   }
-  .bodice {
+}
+
+section {
+  .cont {
     text-align: center;
     display: flex;
     justify-content: center;
     transition: all linear 2s;
-    button {
-      border: solid 1px white;
-      padding: 0.5em 1.5em;
-      border-radius: 1px;
-      font-size: 0.9em;
-      transition: letter-spacing 0.25s linear, color 0.1s linear;
-      &:hover {
-        letter-spacing: 3px;
-      }
-      &:active {
-        background: white;
-        color: black;
-      }
+    display: block;
+    h1 {
+      font-size: 1.9em;
+      cursor: default;
     }
-    section {
-        display: block;
-      .cont {
-        h1 {
-          font-size: 1.9em;
-          cursor: default;
-        }
-        .optionholder {
-          margin-top: 2em;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 1em;
-        }
-      }
-    } 
+    .optionholder {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
   }
 }
 
@@ -82,98 +83,113 @@ body {
   .jace {
     background: rgb(0, 90, 0);
     height: 100%;
-    width: 2%;
+    width: 0%;
     border-radius: 1px;
   }
 }
 
+#one{
+    width: 25%;
+}
+
+#two{
+    width: 50%;
+}
+
+#three{
+    width: 75%;
+}
+
+#four{
+    width: 99%;
+}
 
 .page0 {
-    #welcomey {
-      display: block;
-    }
-    #first {
-      display: none;
-    }
-    #second {
-      display: none;
-    }
-    #third {
-      display: none;
-    }
-    #fourth {
-      display: none;
-    }
+  #welcomey {
+    display: block;
   }
-  
-  .page1 {
-      #welcomey {
-        display: none;
-      }
-      #first {
-        display: block;
-      }
-      #second {
-        display: none;
-      }
-      #third {
-        display: none;
-      }
-      #fourth {
-        display: none;
-      }
+  #first {
+    display: none;
   }
-  
-  .page2 {
-      #welcomey {
-        display: none;
-      }
-      #first {
-        display: none;
-      }
-      #second {
-        display: block;
-      }
-      #third {
-        display: none;
-      }
-      #fourth {
-        display: none;
-      }
+  #second {
+    display: none;
   }
-  
-  .page3 {
-      #welcomey {
-        display: none;
-      }
-      #first {
-        display: none;
-      }
-      #second {
-        display: none;
-      }
-      #third {
-        display: block;
-      }
-      #fourth {
-        display: none;
-      }
+  #third {
+    display: none;
   }
-  
-  .page4 {
-      #welcomey {
-        display: none;
-      }
-      #first {
-        display: none;
-      }
-      #second {
-        display: none;
-      }
-      #third {
-        display: none;
-      }
-      #fourth {
-        display: block;
-      }
+  #fourth {
+    display: none;
   }
+}
+
+.page1 {
+  #welcomey {
+    display: none;
+  }
+  #first {
+    display: block;
+  }
+  #second {
+    display: none;
+  }
+  #third {
+    display: none;
+  }
+  #fourth {
+    display: none;
+  }
+}
+
+.page2 {
+  #welcomey {
+    display: none;
+  }
+  #first {
+    display: none;
+  }
+  #second {
+    display: block;
+  }
+  #third {
+    display: none;
+  }
+  #fourth {
+    display: none;
+  }
+}
+
+.page3 {
+  #welcomey {
+    display: none;
+  }
+  #first {
+    display: none;
+  }
+  #second {
+    display: none;
+  }
+  #third {
+    display: block;
+  }
+  #fourth {
+    display: none;
+  }
+}
+
+.page4 {
+  #welcomey {
+    display: none;
+  }
+  #first {
+    display: none;
+  }
+  #second {
+    display: none;
+  }
+  #third {
+    display: none;
+  }
+  #fourth {
+    display: block;
+  }
+}
