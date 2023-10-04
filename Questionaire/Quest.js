@@ -1,36 +1,40 @@
-// if active page = 1 change class of bar to the 25% holder
-
 const bodice = document.querySelector(".bodice");
 const jace = document.querySelector("#jace");
-
 let numba = 0;
+const selected = document.querySelectorAll("button");
 
+const datum = {
+  key: CSSMathValu,
+  ops: haha
+}
+
+//move to next page
 function next() {
   numba += 1;
   const pop = "page" + numba;
   if (numba > 4) {
-    console.log("end of the road broddie!");
     numba = 4;
   } else {
     bodice.className = pop;
-    console.log(numba);
     progress();
+    record();
   }
 }
 
+//go back to previous page
 function back() {
   numba -= 1;
   const pop = "page" + numba;
   if (numba < 0) {
-    console.log("end of the road broddie!");
     numba = 0;
   } else {
     bodice.className = pop;
-    console.log(numba);
     progress();
+    record();
   }
 }
 
+//change the status of the progress bar
 function progress() {
   if (numba === 0) {
     jace.classList = "nil";
@@ -45,5 +49,15 @@ function progress() {
   } else {
     console.log("poppycock!");
   }
-  console.log(jace.className)
+}
+
+//a function that records what option was clicked.
+//store the recorded information in a json file.
+
+function record() {
+  selected.forEach(btn =>{
+    btn.addEventListener("click", ()=>{
+      console.log(btn.className + " for " + numba)
+    })
+  })
 }
