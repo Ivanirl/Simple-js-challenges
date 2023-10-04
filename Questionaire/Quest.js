@@ -1,7 +1,7 @@
 // if active page = 1 change class of bar to the 25% holder
 
 const bodice = document.querySelector(".bodice");
-const jace = document.querySelector(".jace");
+const jace = document.querySelector("#jace");
 
 let numba = 0;
 
@@ -10,12 +10,12 @@ function next() {
   const pop = "page" + numba;
   if (numba > 4) {
     console.log("end of the road broddie!");
-    numba = 4
+    numba = 4;
   } else {
     bodice.className = pop;
     console.log(numba);
+    progress();
   }
-  progress()
 }
 
 function back() {
@@ -23,25 +23,27 @@ function back() {
   const pop = "page" + numba;
   if (numba < 0) {
     console.log("end of the road broddie!");
-    numba = 0
+    numba = 0;
   } else {
     bodice.className = pop;
     console.log(numba);
+    progress();
   }
 }
 
-function progress(){
-    if(numba = 0){
-        console.log("oneeeeeeeeeeeeeeeee")
-    }else if(numba = 1){
-
-    }else if(numba = 2){
-
-    }else if(numba = 3){
-
-    }else if(numba = 4){
-        
-    }else{
-        console.log("poppycock!")
-    }
+function progress() {
+  if (numba === 0) {
+    jace.classList = "nil";
+  } else if (numba === 1) {
+    jace.classList = "one";
+  } else if (numba === 2) {
+    jace.classList = "two";
+  } else if (numba === 3) {
+    jace.classList = "three";
+  } else if (numba === 4) {
+    jace.className = "four";
+  } else {
+    console.log("poppycock!");
+  }
+  console.log(jace.className)
 }

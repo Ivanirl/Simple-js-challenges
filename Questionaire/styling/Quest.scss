@@ -80,29 +80,30 @@ section {
   height: 3px;
   border-radius: 1px;
 
-  .jace {
+  div {
     background: rgb(0, 90, 0);
     height: 100%;
     width: 0%;
     border-radius: 1px;
   }
-}
-
-#one{
+  
+.one{
     width: 25%;
 }
 
-#two{
+.two{
     width: 50%;
 }
 
-#three{
+.three{
     width: 75%;
 }
 
-#four{
+.four{
     width: 99%;
 }
+}
+
 
 .page0 {
   #welcomey {

@@ -78,26 +78,22 @@ section .cont .optionholder {
   height: 3px;
   border-radius: 1px;
 }
-.talis .jace {
+.talis div {
   background: rgb(0, 90, 0);
   height: 100%;
   width: 0%;
   border-radius: 1px;
 }
-
-#one {
+.talis .one {
   width: 25%;
 }
-
-#two {
+.talis .two {
   width: 50%;
 }
-
-#three {
+.talis .three {
   width: 75%;
 }
-
-#four {
+.talis .four {
   width: 99%;
 }
 
