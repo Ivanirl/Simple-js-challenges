@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 2px;
+  transition: all linear 0.9s;
 }
 
 button {

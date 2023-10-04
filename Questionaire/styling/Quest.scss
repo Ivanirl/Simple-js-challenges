@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 2px;
+  transition: all linear 0.9s;
 }
 
 button {
@@ -86,24 +87,23 @@ section {
     width: 0%;
     border-radius: 1px;
   }
-  
-.one{
+
+  .one {
     width: 25%;
-}
+  }
 
-.two{
+  .two {
     width: 50%;
-}
+  }
 
-.three{
+  .three {
     width: 75%;
-}
+  }
 
-.four{
+  .four {
     width: 99%;
+  }
 }
-}
-
 
 .page0 {
   #welcomey {
