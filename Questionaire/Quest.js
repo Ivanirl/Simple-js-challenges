@@ -57,5 +57,3 @@ function record() {
     })
   })
 }
-
-console.log("Hello World!")
