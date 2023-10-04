@@ -3,10 +3,6 @@ const jace = document.querySelector("#jace");
 let numba = 0;
 const selected = document.querySelectorAll("button");
 
-const datum = {
-  key: CSSMathValu,
-  ops: haha
-}
 
 //move to next page
 function next() {
@@ -61,3 +57,5 @@ function record() {
     })
   })
 }
+
+console.log("Hello World!")
