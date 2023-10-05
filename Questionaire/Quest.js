@@ -2,15 +2,23 @@ const bodice = document.querySelector(".bodice");
 const jace = document.querySelector("#jace");
 let numba = 0;
 const selected = document.querySelectorAll("button");
-
+const capsule = {
+ 
+}
 
 //move to next page
 function next() {
   numba += 1;
   const pop = "page" + numba;
-  if (numba > 4) {
+  if(numba === 5){
+    record();
+  }else if(numba === 1){
+    bodice.className = pop;
+    progress();
+    //record();
+  }else if (numba > 4) {
     numba = 4;
-  } else {
+  } else{
     bodice.className = pop;
     progress();
     record();
@@ -26,7 +34,6 @@ function back() {
   } else {
     bodice.className = pop;
     progress();
-    record();
   }
 }
 
@@ -51,9 +58,17 @@ function progress() {
 //store the recorded information in a json file.
 
 function record() {
+  const hehe = "Question" + numba
+
   selected.forEach(btn =>{
     btn.addEventListener("click", ()=>{
-      console.log(btn.className + " for " + numba)
+      console.log(btn.className + " for " + hehe)
+      capsule[hehe] = btn.className
+      console.log(capsule)
     })
   })
+  console.log(hehe)
 }
+
+//record();
+//put next inside record and put record in the button's html
