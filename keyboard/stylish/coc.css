@@ -101,6 +101,9 @@ input {
   gap: 8px;
   align-items: center;
   margin-top: 1em;
+  background: #7c7c7c;
+  padding: 0.7em 0.3em;
+  border-radius: 10px;
 }
 .container .body .bottom .punch {
   cursor: pointer;
@@ -120,15 +123,32 @@ input {
 }
 .container .body .bottom .punch:active {
   scale: 1;
+  box-shadow: none;
+}
+.container .body .bottom .space {
+  width: 80%;
+}
+.container .body .bottom .space:hover {
+  background: rgb(190, 190, 190);
+  scale: 1.1;
+}
+.container .body .bottom .space:active {
+  scale: 1;
+}
+.container .body .bottom .spec {
+  padding: 0 1.3em;
 }
 .container .body .bottom .row {
-  width: 80%;
+  width: 90%;
   flex-wrap: nowrap;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-wrap: nowrap;
   gap: 5px;
+}
+.container .body .bottom .r2 {
+  width: 80%;
 }
 
 .darkcontainer {
