@@ -26,6 +26,8 @@ punch.forEach((item) => {
         cony.innerText = ""
         console.clear()
         
+    }else if(item.id === "space"){
+        cony.innerText += "/"
     } else{
       cony.innerText += item.value;
       console.log('clicked')
