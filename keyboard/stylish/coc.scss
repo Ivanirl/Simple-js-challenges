@@ -107,6 +107,9 @@ input{
       gap: 8px;
       align-items: center;
       margin-top: 1em;
+      background: #7c7c7c;
+      padding: 0.7em 0.3em;
+      border-radius: 10px;
 
       .punch {
         cursor: pointer;
@@ -128,19 +131,36 @@ input{
         }
         &:active{
           scale: 1;
+          box-shadow: none;
         }
       }
 
-      .row {
+      .space{
         width: 80%;
+        &:hover {
+          background: rgb(190, 190, 190);
+          scale: 1.1;
+        }
+        &:active{
+          scale: 1;
+        }
+      }
+      .spec{
+        padding: 0 1.3em;
+      }
+
+      .row {
+        width: 90%;
         flex-wrap: nowrap;
         height: fit-content;
         display: flex;
         flex-wrap: nowrap;
         gap: 5px;
       }
+      .r2{
+        width: 80%;
+      }
 
-      
     }
   }
 }
