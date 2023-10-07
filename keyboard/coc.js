@@ -3,6 +3,7 @@ const cont = document.querySelector(".container");
 const punch = document.querySelectorAll(".punch");
 const pun = document.getElementById("1");
 const cony = document.querySelector(".boxy");
+const space = document.querySelector("#space");
 
 punch.forEach((item) => {
   item.addEventListener("click", () => {
@@ -11,25 +12,14 @@ punch.forEach((item) => {
       console.log('clicked')
 
     } else if (item.id === "delete") {
-      let string = cony.innerText.toString();
-      cony.innerText = string.substr(0, string.length - 1);
+      let string = cony.value.toString();
+      cony.value = string.substr(0, string.length - 1);
       console.log('clicked')
 
-    } else if (item.id === "clear") {
-      cony.innerText = " ";
-      console.log('clicked')
-
-    } else if (item.id === "equal") {
-      cony.innerText = "";
-      console.log("empty")
-    }else if(item.id === "reset"){
-        cony.innerText = ""
-        console.clear()
-        
     }else if(item.id === "space"){
-        cony.innerText += "/"
+        cony.value += space.value
     } else{
-      cony.innerText += item.value;
+      cony.value+= item.value;
       console.log('clicked')
     }
   });
@@ -39,3 +29,9 @@ hmhm.addEventListener("click", ()=>{
     console.log("clicked")
     cont.className = cont.className === "container" ? "darkcontainer" : "container"
 })
+
+function Case(){
+  punch.forEach((item)=>{
+    punch.className = punch.className ===  "ionic" ? "noShow" : "ionic"
+  })
+}
