@@ -20,6 +20,10 @@ input {
   border: none;
 }
 
+.noShow{
+  display: none;
+}
+
 .container {
   background: linear-gradient(to top, purple, rgb(250, 42, 250));
   display: flex;
@@ -199,7 +203,6 @@ input {
       .boxy {
         align-items: center;
         display: flex;
-        justify-content: flex-end;
         background-color: rgb(173, 173, 173);
         padding: 0 1em;
         height: 2em;
@@ -317,4 +320,8 @@ input {
     color: rgb(255, 255, 255);
     background-color: red;
   }
+}
+
+.noShow{
+  display: none;
 }
