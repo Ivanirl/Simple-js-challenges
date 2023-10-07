@@ -33,7 +33,7 @@ input {
   height: 100%;
 
   .body {
-    //max-width: 367px;
+    max-width: 473.219px;
     background: #fffbfb;
     display: flex;
     flex-direction: column;
@@ -162,6 +162,7 @@ input {
         flex-wrap: nowrap;
         height: fit-content;
         display: flex;
+        justify-content: space-between;
         flex-wrap: nowrap;
         gap: 5px;
       }
@@ -170,4 +171,14 @@ input {
       }
     }
   }
+}
+
+#delete{
+  order: 1;
+}
+
+.cench{
+  display: flex;
+  gap: 5px;
+  margin: 0 1px;
 }

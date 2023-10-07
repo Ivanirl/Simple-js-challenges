@@ -33,6 +33,7 @@ input {
   height: 100%;
 }
 .container .body {
+  max-width: 473.219px;
   background: #fffbfb;
   display: flex;
   flex-direction: column;
@@ -151,9 +152,20 @@ input {
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
   gap: 5px;
 }
 .container .body .bottom .r2 {
   width: 80%;
+}
+
+#delete {
+  order: 1;
+}
+
+.cench {
+  display: flex;
+  gap: 5px;
+  margin: 0 1px;
 }/*# sourceMappingURL=coc.css.map */

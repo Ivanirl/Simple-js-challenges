@@ -1,37 +1,55 @@
 const hmhm = document.querySelector(".toggler");
 const cont = document.querySelector(".container");
 const punch = document.querySelectorAll(".punch");
+const punchy = document.querySelectorAll(".punchy");
 const pun = document.getElementById("1");
 const cony = document.querySelector(".boxy");
 const space = document.querySelector("#space");
+const one = document.querySelectorAll(".ionic");
 
 punch.forEach((item) => {
   item.addEventListener("click", () => {
-    if (cony.innerText != '' && item.id ===  "equal") {
+    if (cony.innerText != "" && item.id === "equal") {
       cony.innerText = eval(cony.innerHTML);
-      console.log('clicked')
-
+      console.log("clicked");
     } else if (item.id === "delete") {
       let string = cony.value.toString();
       cony.value = string.substr(0, string.length - 1);
-      console.log('clicked')
-
-    }else if(item.id === "space"){
-        cony.value += space.value
-    } else{
-      cony.value+= item.value;
-      console.log('clicked')
+      console.log("clicked");
+    } else if (item.id === "space") {
+      cony.value += space.value;
+    } else {
+      cony.value += item.value;
+      console.log("clicked");
     }
   });
 });
 
-hmhm.addEventListener("click", ()=>{
-    console.log("clicked")
-    cont.className = cont.className === "container" ? "darkcontainer" : "container"
-})
+let poop = true;
 
-function Case(){
-  punch.forEach((item)=>{
-    punch.className = punch.className ===  "ionic" ? "noShow" : "ionic"
-  })
+function Case() {
+  if (poop === true) {
+    punchy.forEach((item) => {
+      item.classList.remove("noShow");
+    });
+    one.forEach((item) => {
+      item.classList.add("noShow");
+    });
+    poop = false;
+  } else {
+    punchy.forEach((item) => {
+      item.classList.add("noShow");
+    });
+    one.forEach((item) => {
+      item.classList.remove("noShow");
+    });
+    poop = true;
+  }
+}
+
+function Upper() {
+  console.log("relax")
+  // punch.forEach((item) => {
+  //   item.value = item.value.toLowerCase();
+  // });
 }
