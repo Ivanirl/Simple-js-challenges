@@ -6,6 +6,7 @@ const pun = document.getElementById("1");
 const cony = document.querySelector(".boxy");
 const space = document.querySelector("#space");
 const one = document.querySelectorAll(".ionic");
+const letter = document.querySelectorAll(".L")
 
 punch.forEach((item) => {
   item.addEventListener("click", () => {
@@ -47,9 +48,20 @@ function Case() {
   }
 }
 
+let oppa = true
+
 function Upper() {
-  console.log("relax")
-  // punch.forEach((item) => {
-  //   item.value = item.value.toLowerCase();
-  // });
+  if (oppa === true) {
+    letter.forEach((item) => {
+      item.value = item.value.toUpperCase();
+      item.textContent = item.innerHTML.toUpperCase();
+    });
+    oppa = false
+  }else{
+    letter.forEach((item) => {
+      item.value = item.value.toLowerCase();
+      item.textContent = item.innerHTML.toLowerCase();
+    });
+    oppa = true
+  }
 }
