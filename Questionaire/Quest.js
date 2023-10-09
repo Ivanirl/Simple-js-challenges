@@ -2,9 +2,7 @@ const bodice = document.querySelector(".bodice");
 const jace = document.querySelector("#jace");
 let numba = 0;
 const selected = document.querySelectorAll("button");
-const capsule = {
- 
-}
+const email = document.querySelector(".email")
 
 //move to next page
 function next() {
