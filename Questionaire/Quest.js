@@ -56,9 +56,11 @@ function progress() {
 //store the recorded information in a json file.
 
 function record() {
+  let cord = 0 //new variable to store page names?
   const hehe = "Question" + numba
 
   selected.forEach(btn =>{
+
     btn.addEventListener("click", ()=>{
       console.log(btn.className + " for " + hehe)
       capsule[hehe] = btn.className
