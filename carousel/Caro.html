@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        width: 10em;
+        height: 10em;
+      }
+      .oly {
+        display: flex;
+      }
+      .oly .caro {
+        padding: 2em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      .oly .caro img {
+        width: 80%;
+        height: 30em;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 4px 4px 9px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="oly">
+      <div class="caro">
+        <img src="1.jpg" />
+      </div>
+    </div>
+
+    <script>
+      const pbt = document.querySelector(".caro");
+      const swite = [
+        "<img src='1.jpg' />",
+        "<img src='2.jpg' />",
+        "<img src='3.jpg' />",
+        "<img src='4.jpg' />",
+      ];
+
+      pe = 0;
+
+      setInterval(() => {
+        if (pe === 4) {
+          pe = 0;
+          poop = swite[pe];
+          pbt.innerHTML = poop;
+          pe++;
+        } else {
+          poop = swite[pe];
+          pbt.innerHTML = poop;
+          pe++;
+        }
+      }, 9000);
+    </script>
+  </body>
+</html> 
