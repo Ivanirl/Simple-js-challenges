@@ -1,7 +1,7 @@
 const pop = document.querySelector('#1')
 
 function scroll(){
-    window.addEventListener(scroll(50), ()=>{
+    window.addEventListener(scroll, ()=>{
         pop.className = "active"
     })
 }
