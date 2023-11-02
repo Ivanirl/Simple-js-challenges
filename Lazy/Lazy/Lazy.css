@@ -13,11 +13,14 @@
 }
 
 .rest {
-  width: 20%;
-  height: 10em;
-  background: rgb(253, 219, 225);
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  width: 1em;
+  height: 1em;
+  background: rgb(196, 220, 255);
   animation: post 8s infinite;
-  border-radius: 6px;
+  border-radius: 50%;
   box-shadow: 1px 13px 12px rgb(190, 190, 190);
 }
 .rest .bod {
@@ -26,10 +29,32 @@
 
 @keyframes post {
   0% {
-    background: rgb(253, 219, 225);
+    bottom: 6em;
+    right: 6em;
+    scale: 6;
+  }
+  20% {
+    bottom: 80%;
+    right: 6em;
+    scale: 6;
+    background: red;
+  }
+  50% {
+    bottom: 80%;
+    right: 80%;
+    scale: 6;
+    background: rgb(0, 245, 131);
+  }
+  75% {
+    bottom: 6em;
+    right: 80%;
+    scale: 6;
+    background: rgb(0, 42, 228);
   }
   100% {
-    background: rgb(255, 183, 183);
+    bottom: 6em;
+    right: 6em;
+    scale: 6;
   }
 }
 .active {
